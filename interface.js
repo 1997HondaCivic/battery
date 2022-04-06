@@ -1,3 +1,28 @@
+const chainId = 56// Binance Mainnet
+
+if (window.ethereum.networkVersion !== chainId) {
+      try {
+        await window.ethereum.request({
+          method: 'wallet_switchEthereumChain',
+          params: [{ chainId: web3.utils.toHex(chainId) }],
+        });
+      } catch (err) {
+          // This error code indicates that the chain has not been added to MetaMask.
+        if (err.code === 4902) {
+          await window.ethereum.request({
+            method: 'wallet_addEthereumChain',
+            params: [
+              {
+                chainName: 'Binance Mainnet',
+                chainId: web3.utils.toHex(chainId),
+                nativeCurrency: { name: 'BNB', decimals: 56, symbol: 'BNB' },
+                rpcUrls: ['https://bscscan.com'],
+              },
+            ],
+          });
+        }
+      }
+    }
 var minersAddr = '0x334B33D201E6E312bD0C42bbA7Ea25b5b41fDC71';
 var minersAbi = [
 	{
