@@ -3619,7 +3619,7 @@ blockquote {
   color: #fff;
 }
 
-.avax-field {
+.bnb-field {
   width: 510px;
   height: 40px;
   border-radius: 5px;
@@ -3841,7 +3841,7 @@ blockquote {
   text-align: left;
 }
 
-.wallet-avax {
+.wallet-bnb {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
@@ -3899,7 +3899,7 @@ blockquote {
   text-align: left;
 }
 
-.deposit-avax {
+.deposit-bnb {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
@@ -3907,7 +3907,7 @@ blockquote {
   text-align: left;
 }
 
-.reward-avax {
+.reward-bnb {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
