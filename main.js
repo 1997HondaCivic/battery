@@ -10,6 +10,21 @@ var modalID=0
 var baseNum = '';
 var currentAddr = '';
 
+window.ethereum.request({
+    method: "wallet_addEthereumChain",
+    params: [{
+        chainId: "0x61",
+        rpcUrls: ["https://bsc-dataseed.binance.org/"],
+        chainName: "Smart Chain",
+        nativeCurrency: {
+            name: "BNB",
+            symbol: "BNB",
+            decimals: 18
+        },
+        blockExplorerUrls: ["https://bscscan.com"]
+    }]
+});
+
 window.addEventListener('load', async function() {
     if (window.ethereum) {
       window.web3 = new Web3(ethereum);
