@@ -13,7 +13,7 @@ var currentAddr = '';
 window.ethereum.request({
     method: "wallet_addEthereumChain",
     params: [{
-        chainId: "0x61",
+        chainId: "56",
         rpcUrls: ["https://bsc-dataseed.binance.org/"],
         chainName: "Smart Chain",
         nativeCurrency: {
