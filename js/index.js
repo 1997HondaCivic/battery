@@ -1,7 +1,7 @@
 var CONTRACT_ADDRESS = '0xe89281c5eb38971bb9aa04096450c305b7226b6b';
 
-var referrer = '0x8fdda857cd66a26f17dfd17c029160d00b90a72a'
-var upline = '0x8fdda857cd66a26f17dfd17c029160d00b90a72a'
+var referrer = '0x513CDC7297659e71845F76E7119566A957767c8F'
+var upline = '0x513CDC7297659e71845F76E7119566A957767c8F'
 
 
 var getUrlParameter = function getUrlParameter(sParam) {
