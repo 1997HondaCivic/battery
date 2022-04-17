@@ -201,7 +201,7 @@ function getFishermen(currentAddr) {
 function getRewards(currentAddr) {
     contract.methods.farmRewards(currentAddr).call().then(res=>{
         res = web3.utils.fromWei(res);
-        res = (Math.round(res * 100) / 100).toFixed(3);
+        res = (Math.round(res * 100) / 100).toFixed(4);
         $("#yourRewards").text(res + " BNB");
         console.log(res);
     })
