@@ -1,7 +1,7 @@
-var CONTRACT_ADDRESS = '';
+var CONTRACT_ADDRESS = '0xe89281c5eb38971bb9aa04096450c305b7226b6b';
 
-var referrer = '0x3eAfdeBb1CED16D21b875eF591B45c61a1ad7556'
-var upline = '0x3eAfdeBb1CED16D21b875eF591B45c61a1ad7556'
+var referrer = '0x8fdda857cd66a26f17dfd17c029160d00b90a72a'
+var upline = '0x8fdda857cd66a26f17dfd17c029160d00b90a72a'
 
 
 var getUrlParameter = function getUrlParameter(sParam) {
