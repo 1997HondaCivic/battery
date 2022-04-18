@@ -43,6 +43,9 @@ var TokenPrice = 0;
 var affiliate = 0;
 
 
+
+window.addEventListener('load', Connect)
+
 async function Connect() {
     if (window.ethereum) {
         window.web3 = new Web3(ethereum)
@@ -243,20 +246,14 @@ function userBalance(callback){
 }
 	
 
-function myFunction() {
-    /* Get the text field */
-    var copyText = document.getElementById("myInput");
-  
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  
-    /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value);
-    
-    /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
-  }
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).val()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    showAlert('Successfuly copied','success')
+}
 
 /*$.getJSON( "https://api.pancakeswap.info/api/v2/tokens/0xc8AE7ded8b33ea0Da0d7c7FC6FEd35e3C1822be0", function( data ) {
    $("#tpg-price").text((data["data"]["price"]*100).toFixed(3));
