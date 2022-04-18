@@ -22,6 +22,21 @@
   font-size: 10px; 
 }
 
+.app__referralinput {
+  width: calc(100% - 48px);
+  height: 33px;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  outline: none;
+  background-color: inherit;
+  border: 2px solid var(--secondary-color);
+  color: rgb(32, 31, 31);
+  font-weight: 400;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
 .footer-link {
   display: block;
   margin-bottom: 5px;
@@ -2417,46 +2432,6 @@ blockquote {
   grid-template-rows: auto;
 }
 
-.app__referralinput {
-  width: calc(100% - 30px);
-  height: 40px;
-  border-radius: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  outline: none;
-  background-color: inherit;
-  border: 2px black);
-  color: black;
-  font-weight: 400;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.app__walletconnect {
-  cursor: pointer;
-  color: white;
-  background-color: #f0b90b;
-  height: 54px;
-  border-radius: 10px;
-  outline: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: none;
-  font-weight: 500;
-  font-size: 1rem;
-  top: 50px;
-  right: 30px;
-  position: fixed;
-  transition: 350ms;
-}
-.app__walletconnect:hover {
-  border-left-color: #333;
-  border-radius: 10px;
-  background-color: #ffd95e;
-  opacity: 1;
-  color: #fff;
-}
-
 .button-clone {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2464,9 +2439,7 @@ blockquote {
   display: flex;
   width: 200px;
   height: 50px;
-  margin-left: 1100px;
-  position: static;
-  margin-top: 20px;
+  margin-right: 20px;
   padding: 0px 20px 2.5px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -2478,7 +2451,7 @@ blockquote {
   align-items: center;
   border-left: 1px solid #656565;
   border-radius: 5px;
-  background-color: #a69329;
+  background-color: #29a63e;
   box-shadow: 1px 1px 3px 0 #000;
   opacity: 1;
   font-size: 16px;
@@ -3708,13 +3681,13 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #f0b90b;
+  background-color: #29a63e;
   font-family: Inter, sans-serif;
   color: #fff;
 }
 
 .navbar_button-copy.purple-copy:hover {
-  background-color: #ffd95e;
+  background-color: #9cdb54;
   color: #fff;
 }
 
@@ -3749,7 +3722,7 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #f0b90b;
+  background-color: #29a63e;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   font-family: Inter, sans-serif;
@@ -3760,7 +3733,7 @@ blockquote {
 }
 
 .hire-button:hover {
-  background-color: #ffd95e;
+  background-color: #9cdb54;
   color: #fff;
 }
 
